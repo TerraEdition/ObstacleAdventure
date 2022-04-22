@@ -1,0 +1,1122 @@
+fileFormatVersion: 2
+guid: 8b4222041d957b541927b512ed730e72
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 640916700144319948
+    second: blockDirt_0
+  - first:
+      213: 8407211297399047580
+    second: blockDirt_1
+  - first:
+      213: 71930148738310952
+    second: blockDirt_2
+  - first:
+      213: 3912927370466481344
+    second: blockDirt_3
+  - first:
+      213: -6011615988116399204
+    second: blockDirt_4
+  - first:
+      213: -3557514401003258764
+    second: blockDirt_5
+  - first:
+      213: -4682895121060727071
+    second: blockDirt_6
+  - first:
+      213: -1568895494112441652
+    second: blockDirt_7
+  - first:
+      213: -9029795294080446510
+    second: blockDirt_8
+  - first:
+      213: 9194518685046236526
+    second: blockDirt_9
+  - first:
+      213: -2165197216972216291
+    second: blockDirt_10
+  - first:
+      213: -734532072635164385
+    second: blockDirt_11
+  - first:
+      213: 5664169832507198893
+    second: blockDirt_12
+  - first:
+      213: -4672694572718971617
+    second: blockDirt_13
+  - first:
+      213: -6103170133259926480
+    second: blockDirt_14
+  - first:
+      213: 3888963690127117694
+    second: blockDirt_15
+  - first:
+      213: -1685277428001713713
+    second: blockDirt_16
+  - first:
+      213: 8514039056246162980
+    second: blockDirt_17
+  - first:
+      213: -7543850093190748831
+    second: blockDirt_18
+  - first:
+      213: -6523466876428202027
+    second: blockDirt_19
+  - first:
+      213: 4677908761210606496
+    second: blockDirt_20
+  - first:
+      213: 7758439150442288255
+    second: blockDirt_21
+  - first:
+      213: 1918612300031061971
+    second: blockDirt_22
+  - first:
+      213: 377837430893825410
+    second: blockDirt_23
+  - first:
+      213: 4431334335235756848
+    second: blockDirt_24
+  - first:
+      213: -8748503486703447872
+    second: blockDirt_25
+  - first:
+      213: -1866672104361608743
+    second: blockDirt_26
+  - first:
+      213: -3082448962033639973
+    second: blockDirt_27
+  - first:
+      213: -5259994795327728901
+    second: blockDirt_28
+  - first:
+      213: -5205677348084417465
+    second: blockDirt_29
+  - first:
+      213: 7668274684371503427
+    second: blockDirt_30
+  - first:
+      213: -4628992299428715092
+    second: blockDirt_31
+  - first:
+      213: -5729634950243578744
+    second: blockDirt_32
+  - first:
+      213: 7059848557865307450
+    second: blockDirt_33
+  - first:
+      213: -4544899092425461570
+    second: blockDirt_34
+  - first:
+      213: 1500390540805926402
+    second: blockDirt_35
+  - first:
+      213: -4367800232692624525
+    second: blockDirt_36
+  - first:
+      213: 4156986569606188522
+    second: blockDirt_37
+  - first:
+      213: 6704824651730862287
+    second: blockDirt_38
+  - first:
+      213: -2006972998469876982
+    second: blockDirt_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 1, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blockDirt_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdb7b2d75ef4e800800000000000000
+      internalID: 640916700144319948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c950f15b12a6ca470800000000000000
+      internalID: 8407211297399047580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8232034d61c8ff000800000000000000
+      internalID: 71930148738310952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4de8c36b28d4630800000000000000
+      internalID: 3912927370466481344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b53461c13729ca0800000000000000
+      internalID: -6011615988116399204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c3dd4308b21aec0800000000000000
+      internalID: -3557514401003258764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6f3ccc2b3030fb0800000000000000
+      internalID: -4682895121060727071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 75
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca87b74cd92a3ae0800000000000000
+      internalID: -1568895494112441652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df47dd9509bfa280800000000000000
+      internalID: -9029795294080446510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e656fd6870e799f70800000000000000
+      internalID: 9194518685046236526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18e4b55a9ca3f1e0800000000000000
+      internalID: -2165197216972216291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19137eb8fa6ec5f0800000000000000
+      internalID: -734532072635164385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad431ed37c2b9e40800000000000000
+      internalID: 5664169832507198893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15a0390b01472fb0800000000000000
+      internalID: -4672694572718971617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034c44b891f2d4ba0800000000000000
+      internalID: -6103170133259926480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_15
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 59
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d4b6e1fdf58f530800000000000000
+      internalID: 3888963690127117694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc159f3bb11bc98e0800000000000000
+      internalID: -1685277428001713713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426ca5f8961f72670800000000000000
+      internalID: 8514039056246162980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165619c2f4cde4790800000000000000
+      internalID: -7543850093190748831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df487e407df775a0800000000000000
+      internalID: -6523466876428202027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a355a3db354be040800000000000000
+      internalID: 4677908761210606496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7498952d438bab60800000000000000
+      internalID: 7758439150442288255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dfeb0db8b740aa10800000000000000
+      internalID: 1918612300031061971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_23
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 43
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28dc54b34295e3500800000000000000
+      internalID: 377837430893825410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03318b489134f7d30800000000000000
+      internalID: 4431334335235756848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 27
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c056ce2e62179680800000000000000
+      internalID: -8748503486703447872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 27
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d935637c9f3816e0800000000000000
+      internalID: -1866672104361608743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 27
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd96b32001f835d0800000000000000
+      internalID: -3082448962033639973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 27
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf256103a9eb007b0800000000000000
+      internalID: -5259994795327728901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 27
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c71246808b1c7b0800000000000000
+      internalID: -5205677348084417465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 27
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349851a723f2b6a60800000000000000
+      internalID: 7668274684371503427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_31
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 27
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca56884770482cfb0800000000000000
+      internalID: -4628992299428715092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c8112ae5f3c70b0800000000000000
+      internalID: -5729634950243578744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_33
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 11
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d8d93dbde99f160800000000000000
+      internalID: 7059848557865307450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 11
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb03cf7fa564de0c0800000000000000
+      internalID: -4544899092425461570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_35
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 11
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ee7195f3572d410800000000000000
+      internalID: 1500390540805926402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_36
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 11
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373dc7874d47263c0800000000000000
+      internalID: -4367800232692624525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_37
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 11
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed4279a24590b930800000000000000
+      internalID: 4156986569606188522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 11
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc043bf3f725c0d50800000000000000
+      internalID: 6704824651730862287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blockDirt_39
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 11
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a030768f0bcc524e0800000000000000
+      internalID: -2006972998469876982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      blockDirt_9: 9194518685046236526
+      blockDirt_38: 6704824651730862287
+      blockDirt_19: -6523466876428202027
+      blockDirt_21: 7758439150442288255
+      blockDirt_24: 4431334335235756848
+      blockDirt_35: 1500390540805926402
+      blockDirt_6: -4682895121060727071
+      blockDirt_10: -2165197216972216291
+      blockDirt_32: -5729634950243578744
+      blockDirt_13: -4672694572718971617
+      blockDirt_14: -6103170133259926480
+      blockDirt_11: -734532072635164385
+      blockDirt_26: -1866672104361608743
+      blockDirt_36: -4367800232692624525
+      blockDirt_16: -1685277428001713713
+      blockDirt_4: -6011615988116399204
+      blockDirt_31: -4628992299428715092
+      blockDirt_15: 3888963690127117694
+      blockDirt_2: 71930148738310952
+      blockDirt_3: 3912927370466481344
+      blockDirt_27: -3082448962033639973
+      blockDirt_23: 377837430893825410
+      blockDirt_17: 8514039056246162980
+      blockDirt_34: -4544899092425461570
+      blockDirt_0: 640916700144319948
+      blockDirt_1: 8407211297399047580
+      blockDirt_33: 7059848557865307450
+      blockDirt_30: 7668274684371503427
+      blockDirt_28: -5259994795327728901
+      blockDirt_29: -5205677348084417465
+      blockDirt_20: 4677908761210606496
+      blockDirt_22: 1918612300031061971
+      blockDirt_25: -8748503486703447872
+      blockDirt_39: -2006972998469876982
+      blockDirt_37: 4156986569606188522
+      blockDirt_12: 5664169832507198893
+      blockDirt_18: -7543850093190748831
+      blockDirt_5: -3557514401003258764
+      blockDirt_7: -1568895494112441652
+      blockDirt_8: -9029795294080446510
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
