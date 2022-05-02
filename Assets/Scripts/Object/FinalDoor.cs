@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class FinalDoor : MonoBehaviour
 {
-    [SerializeField] private int key;
-    [SerializeField] private string sceneName;
+    [SerializeField]
+    private int key;
+
     private bool canOpen = true;
+
     private Animator anim;
+
     private GameManager gameManager;
+
     private void Start()
     {
         gameManager = GameManager.instance;
         anim = GetComponent<Animator>();
     }
+
     private void Update()
     {
         if (gameManager.key == key && canOpen)
@@ -29,15 +34,7 @@ public class FinalDoor : MonoBehaviour
         {
             if (!canOpen)
             {
-                gameManager.coin += gameManager.coinTempo;
-                gameManager.jewel += gameManager.jewelTempo;
-                gameManager.coinTempo = 0;
-                gameManager.jewelTempo = 0;
-                gameManager.key = 0;
-                gameManager.scene = sceneName;
-                AdsManager.instance.countAds();
-                gameManager.SaveGame();
-                gameManager.GetComponent<LoadingManager>().loadLevel();
+                gameManager.finished = true;
             }
         }
     }

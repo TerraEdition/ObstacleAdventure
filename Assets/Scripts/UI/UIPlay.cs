@@ -15,6 +15,9 @@ public class UIPlay : MonoBehaviour
     private PlayerAction pauseAction;
 
     [SerializeField]
+    private string nextSceneName;
+
+    [SerializeField]
     private Text jewelText;
 
     [SerializeField]
@@ -27,10 +30,18 @@ public class UIPlay : MonoBehaviour
     private Text keyText;
 
     [SerializeField]
+    private Text textFinished;
+
+    [SerializeField]
     private GameObject pauseCanvas;
 
     [SerializeField]
+    private GameObject finishedCanvas;
+
+    [SerializeField]
     private GameObject gameOverCanvas;
+
+    private int coin = 0;
 
     private void Awake()
     {
@@ -38,9 +49,6 @@ public class UIPlay : MonoBehaviour
         pauseAction.Pause.Exit.performed += _ => GoMenu();
         pauseAction.Pause.Show.performed += _ => ShowPause();
         pauseAction.Pause.Option.performed += _ => ShowOption();
-        gameManager = GameManager.instance;
-        audioManager = AudioManager.instance;
-        adsManager = AdsManager.instance;
     }
 
     private void OnDestroy()
@@ -51,7 +59,11 @@ public class UIPlay : MonoBehaviour
 
     void Start()
     {
+        gameManager = GameManager.instance;
+        audioManager = AudioManager.instance;
+        adsManager = AdsManager.instance;
         adsManager.HideBanner();
+        Resume();
         ResetItem();
         PlayerPrefs.SetString("level", SceneManager.GetActiveScene().name);
     }
@@ -152,10 +164,51 @@ public class UIPlay : MonoBehaviour
         }
         else if (gameManager.playerDie && gameManager.heart <= 0)
         {
-            gameManager.NewGame();
             gameManager.playerDie = false;
+            adsManager.ShowBanner();
+            gameManager.NewGame();
             Pause();
             gameOverCanvas.SetActive(true);
         }
+        else if (gameManager.finished)
+        {
+            adsManager.ShowBanner();
+            gameManager.finished = false;
+            gameManager.coin += gameManager.coinTempo;
+            gameManager.jewel += gameManager.jewelTempo;
+            coin += gameManager.coinTempo;
+            gameManager.coinTempo = 0;
+            gameManager.jewelTempo = 0;
+            gameManager.key = 0;
+            Pause();
+            AdsManager.instance.countAds();
+            gameManager.SaveGame();
+            ShowFinishedCanvas();
+        }
+    }
+
+    void ShowFinishedCanvas()
+    {
+        finishedCanvas.SetActive(true);
+        textFinished.text = "You Got " + coin.ToString() + " Coin";
+    }
+
+    public void AdsDoubleCoinTempo()
+    {
+        adsManager.ShowRewarded (DoubleCoinTempo);
+    }
+
+    void DoubleCoinTempo()
+    {
+        textFinished.text = "You Got " + (coin * 2).ToString() + " Coin";
+        gameManager.coin += coin;
+        coinText.text = ((coin * 2) + gameManager.coin).ToString();
+        gameManager.SaveGame();
+    }
+
+    public void NextLevel()
+    {
+        gameManager.scene = nextSceneName;
+        gameManager.GetComponent<LoadingManager>().loadLevel();
     }
 }

@@ -115,10 +115,6 @@ public class Controller : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit(Collision other)
-    {
-    }
-
     private bool IsGround()
     {
         return Physics2D

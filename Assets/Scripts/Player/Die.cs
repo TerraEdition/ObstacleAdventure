@@ -41,7 +41,14 @@ public class Die : MonoBehaviour
         }
     }
 
-    void Death()
+    // private void OnTriggerEnter2D(Collider2D other)
+    // {
+    //     if (other.gameObject.tag == "Enemy")
+    //     {
+    //         Death();
+    //     }
+    // }
+    public void Death()
     {
         AdsManager.instance.countAds();
         rb.bodyType = RigidbodyType2D.Static;
@@ -55,7 +62,11 @@ public class Die : MonoBehaviour
 
     void Restart()
     {
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        Destroy (gameObject);
+        GameManager.instance.coinTempo = 0;
+        GameManager.instance.jewelTempo = 0;
+        GameManager.instance.key = 0;
+        GameManager.instance.finished = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        // Destroy (gameObject);
     }
 }

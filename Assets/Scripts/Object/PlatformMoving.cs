@@ -12,14 +12,8 @@ public class PlatformMoving : MonoBehaviour
 
     private int currentWayPointIndex = 0;
 
-    [SerializeField]
-    private bool changeRotation;
-
-    private SpriteRenderer sprite;
-
     private void Start()
     {
-        sprite = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -31,20 +25,6 @@ public class PlatformMoving : MonoBehaviour
             .1f
         )
         {
-            if (changeRotation)
-            {
-                if (
-                    wayPoints[currentWayPointIndex].transform.position.x >
-                    transform.position.x
-                )
-                {
-                    sprite.flipX = true;
-                }
-                else
-                {
-                    sprite.flipX = false;
-                }
-            }
             currentWayPointIndex++;
             if (currentWayPointIndex >= wayPoints.Length)
             {

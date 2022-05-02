@@ -12,6 +12,7 @@ TagManager:
   - GoldCoin
   - Trap
   - UISHop
+  - Enemy
   layers:
   - Default
   - TransparentFX

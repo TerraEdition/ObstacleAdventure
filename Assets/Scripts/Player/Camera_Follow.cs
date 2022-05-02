@@ -12,13 +12,9 @@ public class Camera_Follow : MonoBehaviour
 
     private AudioManager audioManager;
 
-    private void Awake()
-    {
-        audioManager = AudioManager.instance;
-    }
-
     private void Start()
     {
+        audioManager = AudioManager.instance;
         player = GameObject.FindWithTag("Player").transform;
     }
 
@@ -26,17 +22,22 @@ public class Camera_Follow : MonoBehaviour
     {
         if (player == null)
         {
+            transform.position =
+                Vector3
+                    .SmoothDamp(transform.position,
+                    new Vector3(0f, 0f, -10f),
+                    ref velocity,
+                    0.20f);
+
             player = GameObject.FindWithTag("Player").transform;
             transform.position =
                 new Vector3(player.position.x,
                     player.position.y,
                     transform.position.z);
-            audioManager.PlaySound("Respawn");
-            // transform.position = Vector3.SmoothDamp(transform.position, player.transform.position + new Vector3(0, 1f, -10f), ref velocity, 0.20f);
         }
         else
         {
-            if (player.position.y < 0f)
+            if (player.position.y < 0f || transform.position.x < 0f)
             {
                 transform.position =
                     new Vector3(player.position.x,

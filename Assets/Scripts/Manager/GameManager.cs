@@ -23,10 +23,9 @@ public class GameManager : MonoBehaviour
     public int jewel = 1000;
 
     [HideInInspector]
-    public int heart = 6;
+    public int heart = 5;
 
-    [HideInInspector]
-    public int coin = 500000;
+    public int coin = 0;
 
     [HideInInspector]
     public int key = 0;
@@ -51,6 +50,9 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector]
     public bool playerDie = false;
+
+    [HideInInspector]
+    public bool finished = false;
 
     [HideInInspector]
     public string scene;

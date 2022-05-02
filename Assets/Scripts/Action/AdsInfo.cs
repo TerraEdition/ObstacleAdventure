@@ -20,7 +20,6 @@ public class AdsInfo : MonoBehaviour
     public void RewardedCoin()
     {
         audioManager.PlaySound("Click");
-        audioManager.PlaySound("Click");
         adsManager.ShowRewarded (AddCoin);
     }
 
