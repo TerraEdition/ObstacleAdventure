@@ -52,6 +52,7 @@ public class UIShop : MonoBehaviour
     private void Start()
     {
         adsManager.ShowBanner();
+        audioManager.PlaySound("Menu");
         ShowUI();
         ShowItems();
     }

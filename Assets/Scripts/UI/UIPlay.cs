@@ -62,6 +62,7 @@ public class UIPlay : MonoBehaviour
         gameManager = GameManager.instance;
         audioManager = AudioManager.instance;
         adsManager = AdsManager.instance;
+        audioManager.PlaySound("Menu");
         adsManager.HideBanner();
         Resume();
         ResetItem();

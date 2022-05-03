@@ -51,6 +51,7 @@ public class UILobby : MonoBehaviour
 
     private void Start()
     {
+        audioManager.PlaySound("Menu");
         adsManager.ShowBanner();
         position = gameManager.selectedCharacter;
         imageSprite.sprite = shopManager.character[position].spriteChar;

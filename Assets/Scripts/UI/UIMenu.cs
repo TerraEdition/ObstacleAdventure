@@ -13,6 +13,7 @@ public class UIMenu : MonoBehaviour
     {
         gameManager = GameManager.instance;
         audioManager = AudioManager.instance;
+        audioManager.PlaySound("Menu");
     }
 
     public void StartBtn()
@@ -38,6 +39,7 @@ public class UIMenu : MonoBehaviour
     public void ExitBtn()
     {
         audioManager.PlaySound("Click");
+
 
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;

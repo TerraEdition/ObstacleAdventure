@@ -11,12 +11,15 @@ public class UIPartLevel : MonoBehaviour
 
     private GameManager gameManager;
 
+    private AudioManager audioManager;
+
     private void Awake()
     {
     }
 
     void Start()
     {
+        audioManager = AudioManager.instance;
         gameManager = GameManager.instance;
         switch (gameManager.selectedLevel)
         {
@@ -36,6 +39,7 @@ public class UIPartLevel : MonoBehaviour
                 break;
         }
         CreatePart();
+        audioManager.PlaySound("Menu");
     }
 
     void CreatePart()

@@ -5,16 +5,16 @@ using UnityEngine;
 public class SpikeHidden : MonoBehaviour
 {
     [SerializeField]
-    private GameObject changePrefab;
+    private GameObject secondPrefab;
 
     [SerializeField]
-    private GameObject startPrefab;
+    private GameObject firstPrefab;
 
     [SerializeField]
-    private float startBtwTime;
+    private float startTime;
 
     [SerializeField]
-    private float endBtwTime;
+    private float BtwTime;
 
     private GameObject lastPrefab;
 
@@ -28,20 +28,32 @@ public class SpikeHidden : MonoBehaviour
         if (lastPrefab != null)
         {
             Destroy (lastPrefab);
+            lastPrefab =
+                (GameObject)
+                Instantiate(firstPrefab,
+                transform.position,
+                Quaternion.identity);
+            yield return new WaitForSeconds(BtwTime);
         }
-        lastPrefab = (GameObject) Instantiate(changePrefab);
-        yield return new WaitForSeconds(startBtwTime);
+        else
+        {
+            lastPrefab =
+                (GameObject)
+                Instantiate(firstPrefab,
+                transform.position,
+                Quaternion.identity);
+            yield return new WaitForSeconds(startTime);
+        }
         StartCoroutine(EndPrefab());
     }
 
     IEnumerator EndPrefab()
     {
-        if (lastPrefab != null)
-        {
-            Destroy (lastPrefab);
-        }
-        lastPrefab = (GameObject) Instantiate(startPrefab);
-        yield return new WaitForSeconds(endBtwTime);
+        Destroy (lastPrefab);
+        lastPrefab =
+            (GameObject)
+            Instantiate(secondPrefab, transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(BtwTime);
         StartCoroutine(StartPrefab());
     }
 }

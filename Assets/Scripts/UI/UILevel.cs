@@ -42,6 +42,7 @@ public class UILevel : MonoBehaviour
     private void Start()
     {
         adsManager.ShowBanner();
+        audioManager.PlaySound("Menu");
         position = gameManager.selectedLevel;
         imageSprite.sprite = shopManager.level[position].spriteLevel;
         CheckLevel();

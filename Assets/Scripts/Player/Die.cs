@@ -51,6 +51,7 @@ public class Die : MonoBehaviour
     public void Death()
     {
         AdsManager.instance.countAds();
+        GetComponent<BoxCollider2D>().enabled = false;
         rb.bodyType = RigidbodyType2D.Static;
         anim.SetTrigger("death");
         audioManager.PlaySound("Die");
@@ -62,11 +63,11 @@ public class Die : MonoBehaviour
 
     void Restart()
     {
-        GameManager.instance.coinTempo = 0;
-        GameManager.instance.jewelTempo = 0;
-        GameManager.instance.key = 0;
-        GameManager.instance.finished = false;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        // Destroy (gameObject);
+        //     GameManager.instance.coinTempo = 0;
+        //     GameManager.instance.jewelTempo = 0;
+        //     GameManager.instance.key = 0;
+        //     GameManager.instance.finished = false;
+        //     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Destroy (gameObject);
     }
 }

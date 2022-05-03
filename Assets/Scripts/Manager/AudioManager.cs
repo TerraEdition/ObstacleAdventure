@@ -87,7 +87,6 @@ public class AudioManager : MonoBehaviour
     {
         StopAllSound();
         changeSound();
-        PlaySound("Menu");
     }
 
     public void PlaySound(string _name)
