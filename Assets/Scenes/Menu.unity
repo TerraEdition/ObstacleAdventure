@@ -3445,21 +3445,56 @@ MonoBehaviour:
     spriteChar: {fileID: 21300000, guid: 8fe0b46ace70bdc4aaf1d0a78aa8f7a4, type: 3}
     speed: 3
     jumpForce: 5.4
-    price: 250
-    buyed: 1
+    price: 350
+    buyed: 0
   - name: Roy
     prefabChar: {fileID: 7252862933270369606, guid: 68bc68e323d91a44b922b88961419436, type: 3}
     spriteChar: {fileID: 21300000, guid: 3ef0e392c5bf2ec48a7a84f8ff1144ab, type: 3}
     speed: 4
     jumpForce: 5.8
-    price: 400
+    price: 760
     buyed: 0
   - name: Selen
     prefabChar: {fileID: 6570027637278612665, guid: 2132ba9c64395fd45ad2db4c0ff2a130, type: 3}
     spriteChar: {fileID: 21300000, guid: fef2e215a29f9064c8748142ddcdbe25, type: 3}
-    speed: 4.4
+    speed: 4.7
     jumpForce: 5.8
-    price: 500
+    price: 900
+    buyed: 0
+  - name: Rick
+    prefabChar: {fileID: 8642193295093110698, guid: d745b6916ac5abe49b982152338347df, type: 3}
+    spriteChar: {fileID: 21300000, guid: e3e25fe1b36b27745a9a494a0c8e8850, type: 3}
+    speed: 4.9
+    jumpForce: 6
+    price: 1350
+    buyed: 0
+  - name: Sunny
+    prefabChar: {fileID: 3006648422142233720, guid: b1e4373a65b16254bae7179ddee5dce7, type: 3}
+    spriteChar: {fileID: 21300000, guid: cfb5cbbeaecc6cb4ca6545bf52fb8fc4, type: 3}
+    speed: 5
+    jumpForce: 5.8
+    price: 1600
+    buyed: 0
+  - name: Melson
+    prefabChar: {fileID: 1511441978742256473, guid: f6364a07c29afc2499595e70fbfeafdb, type: 3}
+    spriteChar: {fileID: 21300000, guid: 4df1afe689a20514d8c516dd20b4b456, type: 3}
+    speed: 5.5
+    jumpForce: 6.5
+    price: 2400
+    buyed: 0
+  - name: Rush
+    prefabChar: {fileID: 6080169651463965596, guid: ad02b0b9e24eee243b8eed98d5b5a704, type: 3}
+    spriteChar: {fileID: 21300000, guid: 6d98d444dd9da594b969fc609704dfd1, type: 3}
+    speed: 6
+    jumpForce: 7
+    price: 3000
+    buyed: 0
+  - name: JL7
+    prefabChar: {fileID: 2429800564361568739, guid: 089043cc1e6239240af167fb4d20bfc4, type: 3}
+    spriteChar: {fileID: 21300000, guid: bea8ef063ce68ae4fb87ebb508ef73e7, type: 3}
+    speed: 10
+    jumpForce: 8
+    price: 5000
     buyed: 0
   level:
   - name: Level1
@@ -3470,33 +3505,33 @@ MonoBehaviour:
   - name: Level2
     spriteLevel: {fileID: 21300000, guid: b98e4c604462ea74890b26f4a012c086, type: 3}
     sceneName: Level2-1
-    price: 20
+    price: 50
     buyed: 0
   - name: Level3
     spriteLevel: {fileID: 21300000, guid: 6ee238032658a494db4b0c12aa7b3b2c, type: 3}
     sceneName: Level3-1
-    price: 30
+    price: 100
     buyed: 0
   item:
   - name: Heart +1
     type: heart
     spriteItem: {fileID: 21300000, guid: d791bdcd471d4c6479fb84c220c35a46, type: 3}
-    price: 50
+    price: 100
     value: 1
   - name: Heart +3
     type: heart
     spriteItem: {fileID: 21300000, guid: d791bdcd471d4c6479fb84c220c35a46, type: 3}
-    price: 140
+    price: 280
     value: 3
   - name: Jewel +1
     type: jewel
     spriteItem: {fileID: 21300000, guid: a9d3a3062f2b40b44b32f6f8757196ae, type: 3}
-    price: 60
+    price: 300
     value: 1
   - name: Jewel +3
     type: jewel
     spriteItem: {fileID: 21300000, guid: a9d3a3062f2b40b44b32f6f8757196ae, type: 3}
-    price: 170
+    price: 800
     value: 3
   nameBuyLevel: 
 --- !u!4 &2015761536

@@ -37,7 +37,7 @@ public class Camera_Follow : MonoBehaviour
         }
         else
         {
-            if (player.position.y < 0f || transform.position.x < 0f)
+            if (player.position.y < -2.3f || transform.position.x < -9.1f)
             {
                 transform.position =
                     new Vector3(player.position.x,

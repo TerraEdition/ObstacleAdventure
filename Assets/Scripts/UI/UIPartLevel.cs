@@ -21,25 +21,25 @@ public class UIPartLevel : MonoBehaviour
     {
         audioManager = AudioManager.instance;
         gameManager = GameManager.instance;
+        audioManager.PlaySound("Menu");
         switch (gameManager.selectedLevel)
         {
             case 0:
                 level = 1;
-                partLevel = 9;
+                partLevel = 13;
                 break;
             case 1:
                 level = 2;
-                partLevel = 1;
+                partLevel = 0;
                 break;
             case 2:
                 level = 3;
-                partLevel = 1;
+                partLevel = 0;
                 break;
             default:
                 break;
         }
         CreatePart();
-        audioManager.PlaySound("Menu");
     }
 
     void CreatePart()

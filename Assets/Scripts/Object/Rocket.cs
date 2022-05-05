@@ -15,7 +15,7 @@ public class Rocket : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        speed = Random.Range(1f, 5f);
+        speed = Random.Range(3f, 5f);
     }
 
     void FixedUpdate()

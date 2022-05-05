@@ -45,19 +45,31 @@ public class ThrowObject : MonoBehaviour
 
     IEnumerator Shot()
     {
-        GameObject bullet = (GameObject) Instantiate(projectile);
-        bullet.transform.position = transform.position;
-        Vector2 direction =
-            target.transform.position - bullet.transform.position;
-        bullet.GetComponent<PickAxe>().SetDirection(direction);
+        GameObject bullet;
         if (target.transform.position.x >= transform.position.x)
         {
+            bullet =
+                Instantiate(projectile,
+                new Vector3(transform.position.x + 1,
+                    transform.position.y,
+                    transform.position.z),
+                Quaternion.identity);
             bullet.GetComponent<PickAxe>().positiveRotate = true;
         }
         else
         {
+            bullet =
+                Instantiate(projectile,
+                new Vector3(transform.position.x - 1,
+                    transform.position.y,
+                    transform.position.z),
+                Quaternion.identity);
             bullet.GetComponent<PickAxe>().positiveRotate = false;
         }
+        Vector2 direction =
+            target.transform.position - bullet.transform.position;
+
+        bullet.GetComponent<PickAxe>().SetDirection(direction);
         yield return new WaitForSeconds(durationShot);
         canShot = true;
     }

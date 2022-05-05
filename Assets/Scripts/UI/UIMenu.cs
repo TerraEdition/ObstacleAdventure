@@ -13,7 +13,7 @@ public class UIMenu : MonoBehaviour
     {
         gameManager = GameManager.instance;
         audioManager = AudioManager.instance;
-        audioManager.PlaySound("Menu");
+        StartCoroutine(PlayBgm());
     }
 
     public void StartBtn()
@@ -46,5 +46,11 @@ public class UIMenu : MonoBehaviour
 #else
     Application.Quit();
     #endif
+    }
+
+    IEnumerator PlayBgm()
+    {
+        yield return new WaitForSeconds(0.5f);
+        audioManager.PlaySound("Menu");
     }
 }
