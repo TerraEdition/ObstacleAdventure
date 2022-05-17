@@ -14,6 +14,7 @@ public class UIPlay : MonoBehaviour
 
     private PlayerAction pauseAction;
 
+    [Header("UI Text")]
     [SerializeField]
     private string nextSceneName;
 
@@ -32,6 +33,7 @@ public class UIPlay : MonoBehaviour
     [SerializeField]
     private Text textFinished;
 
+    [Header("Canvas")]
     [SerializeField]
     private GameObject pauseCanvas;
 
@@ -42,6 +44,15 @@ public class UIPlay : MonoBehaviour
     private GameObject gameOverCanvas;
 
     private int coin = 0;
+
+    [Header("Ads")]
+    private bool giveAdsHeart = true;
+
+    [SerializeField]
+    private GameObject adsHeart;
+
+    [SerializeField]
+    private GameObject doubleCoinBtn;
 
     private void Awake()
     {
@@ -62,7 +73,7 @@ public class UIPlay : MonoBehaviour
         gameManager = GameManager.instance;
         audioManager = AudioManager.instance;
         adsManager = AdsManager.instance;
-        audioManager.PlaySound("Menu");
+        audioManager.PlaySound("Play");
         adsManager.HideBanner();
         Resume();
         ResetItem();
@@ -134,7 +145,7 @@ public class UIPlay : MonoBehaviour
             gameManager.key = 0;
             gameManager.coinTempo = 0;
             gameManager.jewelTempo = 0;
-            gameManager.scene = "Menu";
+            gameManager.scene = "Lobby";
             gameManager.GetComponent<LoadingManager>().loadLevel();
         }
     }
@@ -191,25 +202,59 @@ public class UIPlay : MonoBehaviour
     void ShowFinishedCanvas()
     {
         finishedCanvas.SetActive(true);
+        doubleCoinBtn.GetComponent<Button>().onClick.AddListener(ResultX2Coin);
         textFinished.text = "You Got " + coin.ToString() + " Coin";
-    }
-
-    public void AdsDoubleCoinTempo()
-    {
-        adsManager.ShowRewarded (DoubleCoinTempo);
-    }
-
-    void DoubleCoinTempo()
-    {
-        textFinished.text = "You Got " + (coin * 2).ToString() + " Coin";
-        gameManager.coin += coin;
-        coinText.text = ((coin * 2) + gameManager.coin).ToString();
-        gameManager.SaveGame();
     }
 
     public void NextLevel()
     {
-        gameManager.scene = nextSceneName;
+        if (nextSceneName == "")
+        {
+            gameManager.scene = "Finished";
+        }
+        else
+        {
+            gameManager.scene = nextSceneName;
+        }
         gameManager.GetComponent<LoadingManager>().loadLevel();
+    }
+
+    public void ShowAdsHeart()
+    {
+        if (giveAdsHeart)
+        {
+            giveAdsHeart = false;
+            adsHeart.SetActive(true);
+            adsHeart.GetComponent<Button>().onClick.AddListener(Give2Heart);
+        }
+    }
+
+    void Give2Heart()
+    {
+        audioManager.PlaySound("Click");
+        adsManager.ShowRewarded (AddHeart);
+    }
+
+    void AddHeart()
+    {
+        gameManager.heart += 2;
+        gameManager.updateHeart = true;
+        adsHeart.SetActive(false);
+        gameManager.SaveGame();
+    }
+
+    void ResultX2Coin()
+    {
+        audioManager.PlaySound("Click");
+        adsManager.ShowRewarded (AddDoubleCoin);
+    }
+
+    void AddDoubleCoin()
+    {
+        textFinished.text = "You Got " + (coin * 2).ToString() + " Coin";
+        gameManager.coin += coin;
+        coinText.text = ((coin * 2) + gameManager.coin).ToString();
+        doubleCoinBtn.transform.parent.gameObject.SetActive(false);
+        gameManager.SaveGame();
     }
 }

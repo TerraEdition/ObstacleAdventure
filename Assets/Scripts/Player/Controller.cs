@@ -161,26 +161,27 @@ public class Controller : MonoBehaviour
             isMoving = false;
         }
 
-        //for movement
-        if (grounded)
-        {
-            rb.velocity =
-                new Vector2(XDirectionalInput * moveSpeed, rb.velocity.y);
-        }
-        else if (
-            !grounded &&
-            (!isWallSliding || !isTouchingWall) &&
-            XDirectionalInput != 0
-        )
-        {
-            rb.AddForce(new Vector2(airMoveSpeed * XDirectionalInput, 0));
-            if (Mathf.Abs(rb.velocity.x) > moveSpeed)
-            {
-                rb.velocity =
-                    new Vector2(XDirectionalInput * moveSpeed, rb.velocity.y);
-            }
-        }
+        rb.velocity = new Vector2(XDirectionalInput * moveSpeed, rb.velocity.y);
 
+        //for movement
+        // if (grounded)
+        // {
+        //     rb.velocity =
+        //         new Vector2(XDirectionalInput * moveSpeed, rb.velocity.y);
+        // }
+        // else if (
+        //     !grounded &&
+        //     (!isWallSliding || !isTouchingWall) &&
+        //     XDirectionalInput != 0
+        // )
+        // {
+        //     rb.AddForce(new Vector2(airMoveSpeed * XDirectionalInput, 0));
+        //     if (Mathf.Abs(rb.velocity.x) > moveSpeed)
+        //     {
+        //         rb.velocity =
+        //             new Vector2(XDirectionalInput * moveSpeed, rb.velocity.y);
+        //     }
+        // }
         //for fliping
         if (XDirectionalInput < 0 && facingRight)
         {

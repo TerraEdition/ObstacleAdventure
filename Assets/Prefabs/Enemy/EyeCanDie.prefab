@@ -357,6 +357,8 @@ MonoBehaviour:
   - {fileID: 7149431042897607552}
   - {fileID: 7149431041722001173}
   speed: 2
+  goToNewTarget: 0
+  newTarget: {x: 0, y: 0, z: 0}
   changeRotation: 1
 --- !u!1 &7149431042897607552
 GameObject:

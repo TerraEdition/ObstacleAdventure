@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &424103548729958202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 424103548729958340}
+  - component: {fileID: 424103548729958203}
+  m_Layer: 0
+  m_Name: ShopManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &424103548729958340
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424103548729958202}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 351.38177, y: 76.32747, z: -11.378983}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &424103548729958203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424103548729958202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59214af698a08bb45a75c7171a022fda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character:
+  - name: Simon
+    prefabChar: {fileID: 5197716254546479752, guid: f1fc6dde2aa6004449fe457ce5cf3dde, type: 3}
+    spriteChar: {fileID: 21300000, guid: 60b47ffc5e9f04a4a9d5175b159c6e11, type: 3}
+    speed: 4
+    jumpForce: 5
+    price: 0
+    buyed: 1
+  - name: Angela
+    prefabChar: {fileID: 717882173557650546, guid: d1b03ab8672c56f48b8008d482db2a75, type: 3}
+    spriteChar: {fileID: 21300000, guid: 8fe0b46ace70bdc4aaf1d0a78aa8f7a4, type: 3}
+    speed: 4.3
+    jumpForce: 5
+    price: 240
+    buyed: 0
+  - name: Roy
+    prefabChar: {fileID: 7252862933270369606, guid: 68bc68e323d91a44b922b88961419436, type: 3}
+    spriteChar: {fileID: 21300000, guid: 3ef0e392c5bf2ec48a7a84f8ff1144ab, type: 3}
+    speed: 4.6
+    jumpForce: 5
+    price: 350
+    buyed: 0
+  - name: Selen
+    prefabChar: {fileID: 6570027637278612665, guid: 2132ba9c64395fd45ad2db4c0ff2a130, type: 3}
+    spriteChar: {fileID: 21300000, guid: fef2e215a29f9064c8748142ddcdbe25, type: 3}
+    speed: 4.3
+    jumpForce: 5.2
+    price: 480
+    buyed: 0
+  - name: Rick
+    prefabChar: {fileID: 8642193295093110698, guid: d745b6916ac5abe49b982152338347df, type: 3}
+    spriteChar: {fileID: 21300000, guid: e3e25fe1b36b27745a9a494a0c8e8850, type: 3}
+    speed: 4.7
+    jumpForce: 5.3
+    price: 600
+    buyed: 0
+  - name: Sunny
+    prefabChar: {fileID: 3006648422142233720, guid: b1e4373a65b16254bae7179ddee5dce7, type: 3}
+    spriteChar: {fileID: 21300000, guid: cfb5cbbeaecc6cb4ca6545bf52fb8fc4, type: 3}
+    speed: 5
+    jumpForce: 5.4
+    price: 1200
+    buyed: 0
+  - name: Melson
+    prefabChar: {fileID: 1511441978742256473, guid: f6364a07c29afc2499595e70fbfeafdb, type: 3}
+    spriteChar: {fileID: 21300000, guid: 4df1afe689a20514d8c516dd20b4b456, type: 3}
+    speed: 5.1
+    jumpForce: 5.4
+    price: 1500
+    buyed: 0
+  - name: Rush
+    prefabChar: {fileID: 6080169651463965596, guid: ad02b0b9e24eee243b8eed98d5b5a704, type: 3}
+    spriteChar: {fileID: 21300000, guid: 6d98d444dd9da594b969fc609704dfd1, type: 3}
+    speed: 6
+    jumpForce: 5.6
+    price: 2200
+    buyed: 0
+  - name: JL7
+    prefabChar: {fileID: 2429800564361568739, guid: 089043cc1e6239240af167fb4d20bfc4, type: 3}
+    spriteChar: {fileID: 21300000, guid: bea8ef063ce68ae4fb87ebb508ef73e7, type: 3}
+    speed: 7
+    jumpForce: 5.7
+    price: 3000
+    buyed: 0
+  level:
+  - name: Level1
+    spriteLevel: {fileID: 21300000, guid: 9fd56388d6313ca43afbe67489d7a35b, type: 3}
+    sceneName: Level1-1
+    price: 0
+    buyed: 1
+    development: 0
+  - name: Level2
+    spriteLevel: {fileID: 21300000, guid: b98e4c604462ea74890b26f4a012c086, type: 3}
+    sceneName: Level2-1
+    price: 50
+    buyed: 0
+    development: 1
+  - name: Level3
+    spriteLevel: {fileID: 21300000, guid: 6ee238032658a494db4b0c12aa7b3b2c, type: 3}
+    sceneName: Level3-1
+    price: 100
+    buyed: 0
+    development: 1
+  item:
+  - name: Heart +4
+    type: heart
+    spriteItem: {fileID: 21300000, guid: d791bdcd471d4c6479fb84c220c35a46, type: 3}
+    price: 100
+    value: 4
+  - name: Heart +7
+    type: heart
+    spriteItem: {fileID: 21300000, guid: d791bdcd471d4c6479fb84c220c35a46, type: 3}
+    price: 180
+    value: 7
+  - name: Jewel +2
+    type: jewel
+    spriteItem: {fileID: 21300000, guid: a9d3a3062f2b40b44b32f6f8757196ae, type: 3}
+    price: 300
+    value: 2
+  - name: Jewel +6
+    type: jewel
+    spriteItem: {fileID: 21300000, guid: a9d3a3062f2b40b44b32f6f8757196ae, type: 3}
+    price: 850
+    value: 6
+  nameBuyLevel: 

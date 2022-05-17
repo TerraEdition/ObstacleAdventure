@@ -41,13 +41,14 @@ public class Die : MonoBehaviour
         }
     }
 
-    // private void OnTriggerEnter2D(Collider2D other)
-    // {
-    //     if (other.gameObject.tag == "Enemy")
-    //     {
-    //         Death();
-    //     }
-    // }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Trap")
+        {
+            Death();
+        }
+    }
+
     public void Death()
     {
         AdsManager.instance.countAds();

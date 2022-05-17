@@ -137,8 +137,9 @@ public class UILevel : MonoBehaviour
         audioManager.PlaySound("Click");
         gameManager.SetContinue();
 
-        // gameManager.scene = shopManager.level[position].sceneName;
-        gameManager.scene = "PartLevel";
+        gameManager.scene = shopManager.level[position].sceneName;
+
+        // gameManager.scene = "PartLevel";
         gameManager.GetComponent<LoadingManager>().loadLevel();
     }
 }

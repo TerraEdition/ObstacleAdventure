@@ -99,7 +99,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a2701eb23cedbd045b68fc2b44c78c0e, type: 2}
+  m_Motion: {fileID: 7400000, guid: 9c249cceb3e39824caf74a4d55ba8f03, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -204,7 +204,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b3384282ba9ae0a40b383e5ea46e7113, type: 2}
+  m_Motion: {fileID: 7400000, guid: 392d1c150adeb19478e22e352cd42bcf, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -234,7 +234,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 95d2b32cc5087db4394f19b06fd5d8d0, type: 2}
+  m_Motion: {fileID: 7400000, guid: 659a5d4690634244bae7d38aab66a34b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -322,7 +322,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Male1
+  m_Name: Male-Adventurer2
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: state
@@ -660,7 +660,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d10c12762b9920946a01655ceeffd12e, type: 2}
+  m_Motion: {fileID: 7400000, guid: 19e12a80493e3a54fa2355ed54824780, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -765,7 +765,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b5b387efd7bb36f4383e075da27824fb, type: 2}
+  m_Motion: {fileID: 7400000, guid: 74e324bfe4d81f643b6beedf7a5151de, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

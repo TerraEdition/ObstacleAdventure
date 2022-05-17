@@ -24,6 +24,7 @@ public class FinalDoor : MonoBehaviour
         if (gameManager.key == key && canOpen)
         {
             canOpen = false;
+            AudioManager.instance.PlaySound("door-open");
             anim.SetBool("Open", true);
         }
     }

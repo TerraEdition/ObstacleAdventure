@@ -59,6 +59,7 @@ public class UIShop : MonoBehaviour
 
     public void BackLobby()
     {
+        Debug.Log("Lobby");
         if (gameManager.historyScene != "")
         {
             gameManager.scene = gameManager.historyScene;

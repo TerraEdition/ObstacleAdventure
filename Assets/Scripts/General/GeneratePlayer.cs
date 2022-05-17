@@ -16,6 +16,8 @@ public class GeneratePlayer : MonoBehaviour
 
     private Animator animPortal;
 
+    private UIPlay uiPlay;
+
     void Start()
     {
         gameManager = GameManager.instance;
@@ -23,11 +25,13 @@ public class GeneratePlayer : MonoBehaviour
         audioManager = AudioManager.instance;
         animPortal = GetComponent<Animator>();
         Respawn();
+        uiPlay = GameObject.Find("UI").GetComponent<UIPlay>();
+        uiPlay.ShowAdsHeart();
     }
 
     void Respawn()
     {
-        animPortal.SetInteger("state", 1);
+        animPortal.Play("In");
     }
 
     void InPortal()
@@ -38,12 +42,7 @@ public class GeneratePlayer : MonoBehaviour
             .prefabChar,
         transform.position,
         Quaternion.identity);
-        animPortal.SetInteger("state", 2);
-    }
-
-    void OutPortal()
-    {
-        animPortal.SetInteger("state", 0);
+        animPortal.Play("Out");
     }
 
     private void Update()

@@ -33,6 +33,8 @@ public class Level
     public int price;
 
     public bool buyed;
+
+    public bool development;
 }
 
 [System.Serializable]
@@ -115,7 +117,7 @@ public class ShopManager : MonoBehaviour
         {
             if (level[i].name == name)
             {
-                if (!level[i].buyed)
+                if (!level[i].buyed && !level[i].development)
                 {
                     if (gameManager.jewel >= level[i].price)
                     {
@@ -190,7 +192,7 @@ public class ShopManager : MonoBehaviour
         {
             if (PlayerPrefs.HasKey("level" + i))
             {
-                level[i].buyed =intToBool(PlayerPrefs.GetInt("level" + i));
+                level[i].buyed = intToBool(PlayerPrefs.GetInt("level" + i));
             }
         }
     }

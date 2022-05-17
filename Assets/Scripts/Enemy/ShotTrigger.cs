@@ -28,9 +28,6 @@ public class ShotTrigger : MonoBehaviour
 
     private GameObject player;
 
-    [SerializeField]
-    private float idleTime;
-
     private bool isAttack;
 
     private bool lockTarget;
@@ -49,40 +46,46 @@ public class ShotTrigger : MonoBehaviour
         }
         if (!lockTarget)
         {
-            if (
-                Vector2
-                    .Distance(wayPoints[currentWayPointIndex]
-                        .transform
-                        .position,
-                    enemy.transform.position) <
-                .1f
-            )
+            if (wayPoints.Length > 0)
             {
-                if (changeRotation)
+                if (
+                    Vector2
+                        .Distance(wayPoints[currentWayPointIndex]
+                            .transform
+                            .position,
+                        enemy.transform.position) <
+                    .1f
+                )
                 {
-                    if (
-                        wayPoints[currentWayPointIndex].transform.position.x >
-                        enemy.transform.position.x
-                    )
+                    if (changeRotation)
                     {
-                        sprite.flipX = true;
+                        if (
+                            wayPoints[currentWayPointIndex]
+                                .transform
+                                .position
+                                .x >
+                            enemy.transform.position.x
+                        )
+                        {
+                            sprite.flipX = true;
+                        }
+                        else
+                        {
+                            sprite.flipX = false;
+                        }
                     }
-                    else
+                    currentWayPointIndex++;
+                    if (currentWayPointIndex >= wayPoints.Length)
                     {
-                        sprite.flipX = false;
+                        currentWayPointIndex = 0;
                     }
                 }
-                currentWayPointIndex++;
-                if (currentWayPointIndex >= wayPoints.Length)
-                {
-                    currentWayPointIndex = 0;
-                }
+                enemy.transform.position =
+                    Vector2
+                        .MoveTowards(enemy.transform.position,
+                        wayPoints[currentWayPointIndex].transform.position,
+                        Time.deltaTime * speed);
             }
-            enemy.transform.position =
-                Vector2
-                    .MoveTowards(enemy.transform.position,
-                    wayPoints[currentWayPointIndex].transform.position,
-                    Time.deltaTime * speed);
         }
         else
         {

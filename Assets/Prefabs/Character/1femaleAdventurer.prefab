@@ -182,7 +182,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd31d276dc086264c91fd23619cd4bea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  airMoveSpeed: 15
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -194,7 +193,7 @@ MonoBehaviour:
     m_Bits: 128
   wallCheckPoint: {fileID: 2102264648627902263}
   wallCheckSize: {x: 0.2, y: 0.8}
-  walljumpforce: 7
+  walljumpforce: 10
   walljumpAngle: {x: 1, y: 3}
   walljumpDirection: -1
 --- !u!114 &3006648422142233698
@@ -265,7 +264,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8244108471356237913}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.514, z: 0}
+  m_LocalPosition: {x: 0, y: -0.648, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -10,11 +10,9 @@ public class Camera_Follow : MonoBehaviour
 
     private Vector3 velocity = Vector3.zero;
 
-    private AudioManager audioManager;
 
     private void Start()
     {
-        audioManager = AudioManager.instance;
         player = GameObject.FindWithTag("Player").transform;
     }
 
@@ -39,17 +37,33 @@ public class Camera_Follow : MonoBehaviour
         {
             if (player.position.y < -2.3f || transform.position.x < -9.1f)
             {
+                // transform.position =
+                // new Vector3(player.position.x,
+                //     transform.position.y,
+                //     transform.position.z);
                 transform.position =
-                    new Vector3(player.position.x,
-                        transform.position.y,
-                        transform.position.z);
+                    Vector3
+                        .SmoothDamp(transform.position,
+                        new Vector3(player.position.x,
+                            transform.position.y,
+                            transform.position.z),
+                        ref velocity,
+                        0.20f);
             }
             else
             {
+                // transform.position =
+                //     new Vector3(player.position.x,
+                //         player.position.y,
+                //         transform.position.z);
                 transform.position =
-                    new Vector3(player.position.x,
-                        player.position.y,
-                        transform.position.z);
+                    Vector3
+                        .SmoothDamp(transform.position,
+                        new Vector3(player.position.x,
+                            player.position.y,
+                            transform.position.z),
+                        ref velocity,
+                        0.20f);
             }
         }
     }

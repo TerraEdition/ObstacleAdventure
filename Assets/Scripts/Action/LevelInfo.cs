@@ -80,6 +80,10 @@ public class LevelInfo : MonoBehaviour
         {
             priceText.text = "Owned";
         }
+        else if (shopManager.level[position].development)
+        {
+            priceText.text = "On Development";
+        }
         else
         {
             priceText.text = shopManager.level[position].price.ToString();

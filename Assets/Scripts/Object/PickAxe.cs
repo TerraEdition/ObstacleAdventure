@@ -54,33 +54,17 @@ public class PickAxe : MonoBehaviour
             {
                 Destroy (gameObject);
             }
-            // Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
-            // Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
-            // if (
-            //     (transform.position.x < min.x) ||
-            //     (transform.position.y < min.y) ||
-            //     (transform.position.x > max.x) ||
-            //     (transform.position.y > max.y)
-            // )
-            // {
-            //     Destroy (gameObject);
-            // }
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Trap" || other.gameObject.tag == "Ground")
-        {
-            GetComponent<BoxCollider2D>().enabled = false;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Trap" || other.gameObject.tag == "Ground")
-        {
-            GetComponent<BoxCollider2D>().enabled = true;
+            Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+            Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
+            if (
+                (transform.position.x < min.x) ||
+                (transform.position.y < min.y) ||
+                (transform.position.x > max.x) ||
+                (transform.position.y > max.y)
+            )
+            {
+                Destroy (gameObject);
+            }
         }
     }
 

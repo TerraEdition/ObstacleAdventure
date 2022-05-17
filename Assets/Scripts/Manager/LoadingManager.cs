@@ -49,7 +49,6 @@ public class LoadingManager : MonoBehaviour
             yield return false;
         }
         gameManager.scene = "";
-        audioManager.PlaySound("Menu");
         loadingScreen.SetActive(false);
     }
 }
