@@ -26,9 +26,6 @@ public class UILobby : MonoBehaviour
     private GameObject confirmBtn;
 
     [SerializeField]
-    private GameObject shopBtn;
-
-    [SerializeField]
     private Text nameTxt;
 
     [SerializeField]
@@ -51,7 +48,6 @@ public class UILobby : MonoBehaviour
 
     private void Start()
     {
-        audioManager.PlaySound("Menu");
         adsManager.ShowBanner();
         position = gameManager.selectedCharacter;
         imageSprite.sprite = shopManager.character[position].spriteChar;
@@ -73,44 +69,49 @@ public class UILobby : MonoBehaviour
 
     void NextCharacter()
     {
-        audioManager.PlaySound("Click");
         position = (position + 1) % shopManager.character.Length;
-        if (position > shopManager.character.Length)
+            if (position > shopManager.character.Length)
+            {
+                position = 0;
+            }
+        if (shopManager.character[position].buyed)
         {
-            position = 0;
+            audioManager.PlaySound("Click");
+            gameManager.selectedCharacter = position;
+            CheckCharacter();
+            ShowStatus();
         }
-        imageSprite.sprite = shopManager.character[position].spriteChar;
-        gameManager.selectedCharacter = position;
-        CheckCharacter();
-        ShowStatus();
+        else
+        {
+            NextCharacter();
+        }
     }
 
     void CheckCharacter()
     {
-        if (!shopManager.character[position].buyed)
-        {
-            confirmBtn.SetActive(false);
-            shopBtn.SetActive(true);
-        }
-        else
-        {
-            confirmBtn.SetActive(true);
-            shopBtn.SetActive(false);
-        }
+        imageSprite.sprite = shopManager.character[position].spriteChar;
     }
 
     void PrevCharacter()
     {
-        audioManager.PlaySound("Click");
         position = (position - 1) % shopManager.character.Length;
-        if (position < 0)
+            if (position < 0)
+            {
+                position = shopManager.character.Length - 1;
+            }
+        if (shopManager.character[position].buyed)
         {
-            position = shopManager.character.Length - 1;
+            audioManager.PlaySound("Click");
+            gameManager.selectedCharacter = position;
+            CheckCharacter();
+            ShowStatus();
         }
-        imageSprite.sprite = shopManager.character[position].spriteChar;
-        gameManager.selectedCharacter = position;
-        CheckCharacter();
-        ShowStatus();
+        else
+        {
+         if(position > 0){
+            PrevCharacter();
+            }
+        }
     }
 
     void ShowStatus()
@@ -135,14 +136,6 @@ public class UILobby : MonoBehaviour
     {
         audioManager.PlaySound("Click");
         gameManager.scene = "Level";
-        gameManager.GetComponent<LoadingManager>().loadLevel();
-    }
-
-    public void Shop()
-    {
-        audioManager.PlaySound("Click");
-        gameManager.historyScene = "Lobby";
-        gameManager.scene = "Shop";
         gameManager.GetComponent<LoadingManager>().loadLevel();
     }
 }

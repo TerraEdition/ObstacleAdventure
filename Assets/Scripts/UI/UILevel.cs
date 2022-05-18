@@ -25,9 +25,6 @@ public class UILevel : MonoBehaviour
     private GameObject confirmBtn;
 
     [SerializeField]
-    private GameObject shopBtn;
-
-    [SerializeField]
     GameObject continuePlayCanvas;
 
     private void Awake()
@@ -42,7 +39,6 @@ public class UILevel : MonoBehaviour
     private void Start()
     {
         adsManager.ShowBanner();
-        audioManager.PlaySound("Menu");
         position = gameManager.selectedLevel;
         imageSprite.sprite = shopManager.level[position].spriteLevel;
         CheckLevel();
@@ -79,42 +75,48 @@ public class UILevel : MonoBehaviour
 
     void NextLevel()
     {
-        audioManager.PlaySound("Click");
         position = (position + 1) % shopManager.level.Length;
         if (position > shopManager.level.Length)
         {
             position = 0;
         }
-        imageSprite.sprite = shopManager.level[position].spriteLevel;
-        gameManager.selectedLevel = position;
-        CheckLevel();
+        if (shopManager.level[position].buyed)
+        {
+            audioManager.PlaySound("Click");
+            gameManager.selectedLevel = position;
+            CheckLevel();
+        }
+        else
+        {
+            NextLevel();
+        }
     }
 
     void CheckLevel()
     {
-        if (!shopManager.level[position].buyed)
-        {
-            confirmBtn.SetActive(false);
-            shopBtn.SetActive(true);
-        }
-        else
-        {
-            confirmBtn.SetActive(true);
-            shopBtn.SetActive(false);
-        }
+        imageSprite.sprite = shopManager.level[position].spriteLevel;
     }
 
     void PrevLevel()
     {
-        audioManager.PlaySound("Click");
         position = (position - 1) % shopManager.level.Length;
         if (position < 0)
         {
             position = shopManager.level.Length - 1;
         }
-        imageSprite.sprite = shopManager.level[position].spriteLevel;
-        gameManager.selectedLevel = position;
-        CheckLevel();
+        if (shopManager.level[position].buyed)
+        {
+            audioManager.PlaySound("Click");
+            gameManager.selectedLevel = position;
+            CheckLevel();
+        }
+        else
+        {
+            if (position > 0)
+            {
+                PrevLevel();
+            }
+        }
     }
 
     public void BackLobby()
@@ -137,9 +139,8 @@ public class UILevel : MonoBehaviour
         audioManager.PlaySound("Click");
         gameManager.SetContinue();
 
-        gameManager.scene = shopManager.level[position].sceneName;
-
-        // gameManager.scene = "PartLevel";
+        // gameManager.scene = shopManager.level[position].sceneName;
+        gameManager.scene = "PartLevel";
         gameManager.GetComponent<LoadingManager>().loadLevel();
     }
 }

@@ -43,6 +43,7 @@ public class CharacterInfo : MonoBehaviour
 
     private void Start()
     {
+        position = gameManager.selectedCharacter;
         CheckCharacter();
         ShowStatus();
         lobbyAction.Lobby.Prev.performed += _ => PrevCharacter();
@@ -69,7 +70,6 @@ public class CharacterInfo : MonoBehaviour
         {
             position = 0;
         }
-        imageSprite.sprite = shopManager.character[position].spriteChar;
         CheckCharacter();
     }
 
@@ -84,6 +84,7 @@ public class CharacterInfo : MonoBehaviour
 
     void CheckCharacter()
     {
+        imageSprite.sprite = shopManager.character[position].spriteChar;
         if (
             shopManager.character[position].buyed ||
             gameManager.coin < shopManager.character[position].price
@@ -106,7 +107,6 @@ public class CharacterInfo : MonoBehaviour
         {
             position = shopManager.character.Length - 1;
         }
-        imageSprite.sprite = shopManager.character[position].spriteChar;
         CheckCharacter();
     }
 

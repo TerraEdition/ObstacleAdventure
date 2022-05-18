@@ -21,20 +21,19 @@ public class UIPartLevel : MonoBehaviour
     {
         audioManager = AudioManager.instance;
         gameManager = GameManager.instance;
-        audioManager.PlaySound("Menu");
         switch (gameManager.selectedLevel)
         {
             case 0:
                 level = 1;
-                partLevel = 13;
+                partLevel = 15;
                 break;
             case 1:
                 level = 2;
-                partLevel = 0;
+                partLevel = 6;
                 break;
             case 2:
                 level = 3;
-                partLevel = 0;
+                partLevel = 1;
                 break;
             default:
                 break;
@@ -76,10 +75,5 @@ public class UIPartLevel : MonoBehaviour
                 .SetParent(canvasLevel.transform);
             textItem.transform.localScale = new Vector3(1f, 1f, 0f);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 }

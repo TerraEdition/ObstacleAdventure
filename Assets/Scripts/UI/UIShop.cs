@@ -52,14 +52,23 @@ public class UIShop : MonoBehaviour
     private void Start()
     {
         adsManager.ShowBanner();
-        audioManager.PlaySound("Menu");
         ShowUI();
-        ShowItems();
+        if (gameManager.historyScene == "Lobby")
+        {
+            ShowChar();
+        }
+        else if (gameManager.historyScene == "Level")
+        {
+            ShowLevel();
+        }
+        else
+        {
+            ShowItems();
+        }
     }
 
     public void BackLobby()
     {
-        Debug.Log("Lobby");
         if (gameManager.historyScene != "")
         {
             gameManager.scene = gameManager.historyScene;
@@ -106,7 +115,7 @@ public class UIShop : MonoBehaviour
         charCanvas.SetActive(false);
         levelCanvas.SetActive(false);
         adsCanvas.SetActive(false);
-
+        
         itemCanvasBtn.SetActive(true);
         charCanvasBtn.SetActive(false);
         levelCanvasBtn.SetActive(false);
@@ -119,7 +128,6 @@ public class UIShop : MonoBehaviour
         charCanvas.SetActive(true);
         levelCanvas.SetActive(false);
         adsCanvas.SetActive(false);
-
         itemCanvasBtn.SetActive(false);
         charCanvasBtn.SetActive(true);
         levelCanvasBtn.SetActive(false);
@@ -132,7 +140,6 @@ public class UIShop : MonoBehaviour
         charCanvas.SetActive(false);
         levelCanvas.SetActive(true);
         adsCanvas.SetActive(false);
-
         itemCanvasBtn.SetActive(false);
         charCanvasBtn.SetActive(false);
         levelCanvasBtn.SetActive(true);
@@ -145,7 +152,6 @@ public class UIShop : MonoBehaviour
         charCanvas.SetActive(false);
         levelCanvas.SetActive(false);
         adsCanvas.SetActive(true);
-
         itemCanvasBtn.SetActive(false);
         charCanvasBtn.SetActive(false);
         levelCanvasBtn.SetActive(false);
@@ -153,6 +159,7 @@ public class UIShop : MonoBehaviour
 
     public void StoreItem(GameObject _gameObject)
     {
+        Debug.Log("Success Store");
         if (canvasImageItem == null)
         {
             canvasImageItem = _gameObject;
@@ -176,5 +183,20 @@ public class UIShop : MonoBehaviour
         audioManager.PlaySound("Click");
         string name = canvasImageItem.GetComponent<ItemStatus>().name;
         shopManager.BuyItem (name);
+    }
+
+    public void NotEnoughCoin()
+    {
+        Debug.Log("Not Have Coin");
+        StartCoroutine(CoinAnimate());
+    }
+
+    IEnumerator CoinAnimate()
+    {
+        coinText.color = Color.red;
+        coinText.fontSize = 40;
+        yield return new WaitForSeconds(1f);
+        coinText.color = Color.white;
+        coinText.fontSize = 30;
     }
 }

@@ -34,7 +34,8 @@ public class ItemStatus : MonoBehaviour
     public void Clicked()
     {
         audioManager.PlaySound("Click");
-        GameObject ui = GameObject.FindWithTag("UISHop");
+        GameObject ui = GameObject.Find("Canvas");
+        Debug.Log(ui.name);
         ui.GetComponent<UIShop>().StoreItem(gameObject);
     }
 }

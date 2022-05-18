@@ -95,6 +95,10 @@ public class AudioManager : MonoBehaviour
         {
             if (sounds[i].name == _name)
             {
+                if (!sounds[i].isSfx)
+                {
+                    StopAllSoundBGM();
+                }
                 sounds[i].Play();
                 return;
             }

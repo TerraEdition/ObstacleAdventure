@@ -28,7 +28,6 @@ public class LoadingManager : MonoBehaviour
 
     public void loadLevel()
     {
-        audioManager.StopAllSoundBGM();
         StartCoroutine(LoadAsynchronously());
     }
 

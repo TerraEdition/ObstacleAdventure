@@ -110,21 +110,15 @@ MonoBehaviour:
     buyed: 0
   level:
   - name: Level1
-    spriteLevel: {fileID: 21300000, guid: 9fd56388d6313ca43afbe67489d7a35b, type: 3}
-    sceneName: Level1-1
+    spriteLevel: {fileID: 21300000, guid: 7150df0a5901cf541b8e83dc031dd1c8, type: 3}
+    sceneName: 1-1
     price: 0
     buyed: 1
     development: 0
   - name: Level2
-    spriteLevel: {fileID: 21300000, guid: b98e4c604462ea74890b26f4a012c086, type: 3}
-    sceneName: Level2-1
+    spriteLevel: {fileID: 21300000, guid: 381861dd7350cc34aa040cc4c02b50c5, type: 3}
+    sceneName: 2-1
     price: 50
-    buyed: 0
-    development: 1
-  - name: Level3
-    spriteLevel: {fileID: 21300000, guid: 6ee238032658a494db4b0c12aa7b3b2c, type: 3}
-    sceneName: Level3-1
-    price: 100
     buyed: 0
     development: 1
   item:

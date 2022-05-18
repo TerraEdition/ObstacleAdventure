@@ -65,6 +65,7 @@ public class ShopManager : MonoBehaviour
 
     public string nameBuyLevel;
 
+
     void Awake()
     {
         if (instance != null)
@@ -97,6 +98,7 @@ public class ShopManager : MonoBehaviour
             {
                 if (!character[i].buyed)
                 {
+                    AudioManager.instance.PlaySound("Purchase");
                     if (gameManager.coin >= character[i].price)
                     {
                         gameManager.coin -= character[i].price;
@@ -105,6 +107,12 @@ public class ShopManager : MonoBehaviour
                         gameManager.updateCharacter = true;
                         SaveGameCharacter();
                         gameManager.SaveGame();
+                    }
+                    else
+                    {
+                        AudioManager.instance.PlaySound("Error_Purchase");
+                        UIShop uiShop = GameObject.Find("Canvas").GetComponent<UIShop>();
+                        uiShop.NotEnoughCoin();
                     }
                 }
             }
@@ -121,12 +129,19 @@ public class ShopManager : MonoBehaviour
                 {
                     if (gameManager.jewel >= level[i].price)
                     {
+                        AudioManager.instance.PlaySound("Purchase");
                         gameManager.jewel -= level[i].price;
                         level[i].buyed = true;
                         gameManager.updateJewel = true;
                         gameManager.updateLevel = true;
                         SaveGameLevel();
                         gameManager.SaveGame();
+                    }
+                    else
+                    {
+                        AudioManager.instance.PlaySound("Error_Purchase");
+                        UIShop uiShop = GameObject.Find("Canvas").GetComponent<UIShop>();
+                        uiShop.NotEnoughCoin();
                     }
                 }
             }
@@ -141,6 +156,7 @@ public class ShopManager : MonoBehaviour
             {
                 if (gameManager.coin >= item[i].price)
                 {
+                    AudioManager.instance.PlaySound("Purchase");
                     gameManager.coin -= item[i].price;
                     if (item[i].type == "heart")
                     {
@@ -154,6 +170,12 @@ public class ShopManager : MonoBehaviour
                     }
                     gameManager.SaveGame();
                     gameManager.updateCoin = true;
+                }
+                else
+                {
+                    AudioManager.instance.PlaySound("Error_Purchase");
+                    UIShop uiShop = GameObject.Find("Canvas").GetComponent<UIShop>();
+                    uiShop.NotEnoughCoin();
                 }
             }
         }

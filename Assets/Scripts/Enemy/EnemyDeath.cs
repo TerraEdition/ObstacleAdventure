@@ -38,6 +38,7 @@ public class EnemyDeath : MonoBehaviour
 
     private void Die()
     {
+        AudioManager.instance.PlaySound("Hit_Enemy");
         isDie = true;
         GetComponent<Rigidbody2D>().gravityScale = 1;
         GetComponent<BoxCollider2D>().enabled = false;

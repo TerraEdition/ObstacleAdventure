@@ -30,27 +30,16 @@ public class AdsInfo : MonoBehaviour
         gameManager.SaveGame();
     }
 
-    public void AddCoinNoAds()
+    public void RewardedHeart()
     {
         audioManager.PlaySound("Click");
-        gameManager.coin += 2000;
+        adsManager.ShowRewarded (AddHeart);
+    }
+
+    void AddHeart()
+    {
+        gameManager.coin += Random.Range(1, 3);
         gameManager.updateCoin = true;
-        gameManager.SaveGame();
-    }
-
-    public void AddJewelNoAds()
-    {
-        audioManager.PlaySound("Click");
-        gameManager.jewel += 2000;
-        gameManager.updateJewel = true;
-        gameManager.SaveGame();
-    }
-
-    public void AddHeartNoAds()
-    {
-        audioManager.PlaySound("Click");
-        gameManager.heart += 100;
-        gameManager.updateHeart = true;
         gameManager.SaveGame();
     }
 }

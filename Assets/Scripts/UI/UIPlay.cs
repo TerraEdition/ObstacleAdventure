@@ -73,11 +73,18 @@ public class UIPlay : MonoBehaviour
         gameManager = GameManager.instance;
         audioManager = AudioManager.instance;
         adsManager = AdsManager.instance;
-        audioManager.PlaySound("Play");
         adsManager.HideBanner();
         Resume();
+        PlaySound();
         ResetItem();
         PlayerPrefs.SetString("level", SceneManager.GetActiveScene().name);
+    }
+
+    void PlaySound()
+    {
+        audioManager
+            .PlaySound("Level" +
+            SceneManager.GetActiveScene().name.Split("-")[0]);
     }
 
     void ResetItem()
@@ -146,6 +153,7 @@ public class UIPlay : MonoBehaviour
             gameManager.coinTempo = 0;
             gameManager.jewelTempo = 0;
             gameManager.scene = "Lobby";
+            audioManager.PlaySound("Menu");
             gameManager.GetComponent<LoadingManager>().loadLevel();
         }
     }
@@ -180,10 +188,12 @@ public class UIPlay : MonoBehaviour
             adsManager.ShowBanner();
             gameManager.NewGame();
             Pause();
+            audioManager.PlaySound("Game_Over");
             gameOverCanvas.SetActive(true);
         }
         else if (gameManager.finished)
         {
+            audioManager.PlaySound("Next_Level");
             adsManager.ShowBanner();
             gameManager.finished = false;
             gameManager.coin += gameManager.coinTempo;
