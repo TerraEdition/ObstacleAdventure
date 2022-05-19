@@ -25,8 +25,6 @@ public class GeneratePlayer : MonoBehaviour
         audioManager = AudioManager.instance;
         animPortal = GetComponent<Animator>();
         Respawn();
-        uiPlay = GameObject.Find("UI").GetComponent<UIPlay>();
-        uiPlay.ShowAdsHeart();
     }
 
     void Respawn()

@@ -56,7 +56,7 @@ public class UIPartLevel : MonoBehaviour
                 .SetParent(gameObject.transform);
             canvasLevel.transform.localScale = new Vector3(1f, 1f, 0f);
             BtnScene btnScene = canvasLevel.AddComponent<BtnScene>();
-            btnScene.sceneName = "Level" + level + "-" + i;
+            btnScene.sceneName = level + "-" + i;
 
             // text
             GameObject textItem = new GameObject();

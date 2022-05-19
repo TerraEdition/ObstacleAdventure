@@ -116,6 +116,18 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
 #endif
     }
 
+    public bool ReadyRewarded()
+    {
+        if (
+            Advertisement.IsReady("Rewarded_IOS") ||
+            Advertisement.IsReady("Rewarded_Android")
+        )
+        {
+            return true;
+        }
+        return false;
+    }
+
     IEnumerator TryShowBanner()
     {
         yield return new WaitForSeconds(1);

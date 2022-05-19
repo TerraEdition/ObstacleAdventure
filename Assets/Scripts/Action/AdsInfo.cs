@@ -38,8 +38,8 @@ public class AdsInfo : MonoBehaviour
 
     void AddHeart()
     {
-        gameManager.coin += Random.Range(1, 3);
-        gameManager.updateCoin = true;
+        gameManager.heart += Random.Range(1, 3);
+        gameManager.updateHeart = true;
         gameManager.SaveGame();
     }
 }

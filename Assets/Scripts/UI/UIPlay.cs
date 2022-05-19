@@ -77,6 +77,7 @@ public class UIPlay : MonoBehaviour
         Resume();
         PlaySound();
         ResetItem();
+        ShowAdsHeart();
         PlayerPrefs.SetString("level", SceneManager.GetActiveScene().name);
     }
 
@@ -233,10 +234,26 @@ public class UIPlay : MonoBehaviour
     {
         if (giveAdsHeart)
         {
-            giveAdsHeart = false;
-            adsHeart.SetActive(true);
-            adsHeart.GetComponent<Button>().onClick.AddListener(Give2Heart);
+            if (adsManager.ReadyRewarded())
+            {
+                Debug.Log("Ready");
+                adsHeart.SetActive(true);
+                giveAdsHeart = false;
+                adsHeart.GetComponent<Button>().onClick.AddListener(Give2Heart);
+            }
+            else
+            {
+                Debug.Log("TryAgain");
+                adsHeart.SetActive(false);
+                StartCoroutine(CheckReadyRewarded());
+            }
         }
+    }
+
+    IEnumerator CheckReadyRewarded()
+    {
+        yield return new WaitForSeconds(3f);
+        ShowAdsHeart();
     }
 
     void Give2Heart()
