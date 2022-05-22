@@ -120,7 +120,7 @@ MonoBehaviour:
     sceneName: 2-1
     price: 50
     buyed: 0
-    development: 1
+    development: 0
   item:
   - name: Heart +4
     type: heart

@@ -6257,13 +6257,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_unityVersion_m09F45
 	String_t* icallRetVal = _il2cpp_icall_func();
 	return icallRetVal;
 }
-// System.String UnityEngine.Application::get_productName()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_productName_m00192B33A17C93424812C4A99AEA41993380EBA1 (const RuntimeMethod* method) 
+// System.String UnityEngine.Application::get_version()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_version_mD6AC9813ABCAD4D2A1F764F99E26068CA5B830F2 (const RuntimeMethod* method) 
 {
-	typedef String_t* (*Application_get_productName_m00192B33A17C93424812C4A99AEA41993380EBA1_ftn) ();
-	static Application_get_productName_m00192B33A17C93424812C4A99AEA41993380EBA1_ftn _il2cpp_icall_func;
+	typedef String_t* (*Application_get_version_mD6AC9813ABCAD4D2A1F764F99E26068CA5B830F2_ftn) ();
+	static Application_get_version_mD6AC9813ABCAD4D2A1F764F99E26068CA5B830F2_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Application_get_productName_m00192B33A17C93424812C4A99AEA41993380EBA1_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::get_productName()");
+	_il2cpp_icall_func = (Application_get_version_mD6AC9813ABCAD4D2A1F764F99E26068CA5B830F2_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::get_version()");
 	String_t* icallRetVal = _il2cpp_icall_func();
 	return icallRetVal;
 }

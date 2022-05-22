@@ -35,13 +35,13 @@ public class ShotTrigger : MonoBehaviour
     private void Start()
     {
         sprite = enemy.GetComponent<SpriteRenderer>();
-        player = GameObject.FindWithTag("Player");
     }
 
     private void Update()
     {
         if (player == null)
         {
+            lockTarget = false;
             player = GameObject.FindWithTag("Player");
         }
         if (!lockTarget)
@@ -67,11 +67,11 @@ public class ShotTrigger : MonoBehaviour
                             enemy.transform.position.x
                         )
                         {
-                            sprite.flipX = true;
+                            enemy.transform.localScale = new Vector3(-1, 1, 1);
                         }
                         else
                         {
-                            sprite.flipX = false;
+                            enemy.transform.localScale = new Vector3(1, 1, 1);
                         }
                     }
                     currentWayPointIndex++;
@@ -96,11 +96,11 @@ public class ShotTrigger : MonoBehaviour
                     if (player.transform.position.x > enemy.transform.position.x
                     )
                     {
-                        sprite.flipX = true;
+                        enemy.transform.localScale = new Vector3(1, 1, 1);
                     }
                     else
                     {
-                        sprite.flipX = false;
+                        enemy.transform.localScale = new Vector3(-1, 1, 1);
                     }
                 }
                 StartCoroutine(Shot());
@@ -153,6 +153,7 @@ public class ShotTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            isAttack = false;
             lockTarget = false;
         }
     }

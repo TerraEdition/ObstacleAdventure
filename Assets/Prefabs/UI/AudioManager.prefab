@@ -158,7 +158,7 @@ MonoBehaviour:
     loop: 1
     isSfx: 0
   - name: Level2
-    clip: {fileID: 8300000, guid: 0948fa79507c27249b5f68c1b5e48e72, type: 3}
+    clip: {fileID: 8300000, guid: 60db54a978c94104ab57c0f32f2981f6, type: 3}
     volume: 1
     pitch: 1.2
     randomVolume: 0.284

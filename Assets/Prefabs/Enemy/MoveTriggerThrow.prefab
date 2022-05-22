@@ -113,9 +113,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6808888827399731941, guid: 5bef64e71b6eb0a4f864e10a366c4955, type: 3}
+      propertyPath: wayPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6808888827399731941, guid: 5bef64e71b6eb0a4f864e10a366c4955, type: 3}
+      propertyPath: wayPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 2079800130431039182}
+    - target: {fileID: 6808888827399731941, guid: 5bef64e71b6eb0a4f864e10a366c4955, type: 3}
+      propertyPath: wayPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 4532577232920785582}
     - target: {fileID: 6808888827399731946, guid: 5bef64e71b6eb0a4f864e10a366c4955, type: 3}
       propertyPath: m_Name
-      value: TriggerThrowMove
+      value: MoveTriggerThrow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bef64e71b6eb0a4f864e10a366c4955, type: 3}

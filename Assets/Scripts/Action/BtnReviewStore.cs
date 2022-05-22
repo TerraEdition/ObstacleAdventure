@@ -18,6 +18,7 @@ public class BtnReviewStore : MonoBehaviour
     // Update is called once per frame
     void Click()
     {
-        Application.OpenURL("market://details?id=" + Application.productName);
+        Application
+            .OpenURL("https://play.google.com/store/apps/details?id=terraedition.obstacle.adventure");
     }
 }

@@ -926,7 +926,39 @@ extern void U3CCoinAnimateU3Ed__28_System_Collections_Generic_IEnumeratorU3CSyst
 extern void U3CCoinAnimateU3Ed__28_System_Collections_IEnumerator_Reset_m77EA8720CC59D559935B236446A6FF95E5AB72D4 (void);
 // 0x000001D0 System.Object UIShop/<CoinAnimate>d__28::System.Collections.IEnumerator.get_Current()
 extern void U3CCoinAnimateU3Ed__28_System_Collections_IEnumerator_get_Current_m32A1528C1F06D90CCDCE14583538F047ADC13543 (void);
-static Il2CppMethodPointer s_methodPointers[464] = 
+// 0x000001D1 System.Void UISplash::GoMenu()
+extern void UISplash_GoMenu_m8319CA43E3F6970FCF2D9434DD4C67939D7AA3BA (void);
+// 0x000001D2 System.Void UISplash::.ctor()
+extern void UISplash__ctor_m7FBE0C1A28E02D345F37AA603D90737B7900CF05 (void);
+// 0x000001D3 System.Void UpgradeSystem.CheckUpdate::Start()
+extern void CheckUpdate_Start_mDEE984FCAAEB1C401235C62F91383B4229BC25C8 (void);
+// 0x000001D4 System.Collections.IEnumerator UpgradeSystem.CheckUpdate::CheckForUpdates()
+extern void CheckUpdate_CheckForUpdates_m93111E9B321F9D779CF58277931045182C342759 (void);
+// 0x000001D5 System.Void UpgradeSystem.CheckUpdate::ShowPopup()
+extern void CheckUpdate_ShowPopup_mEEA89A501AD047340C6DA6EECE360B6D27DAD174 (void);
+// 0x000001D6 System.Void UpgradeSystem.CheckUpdate::HidePopup()
+extern void CheckUpdate_HidePopup_mA21108A497BC3E3C43D68C73B555ED56A3738716 (void);
+// 0x000001D7 System.Void UpgradeSystem.CheckUpdate::OnDestroy()
+extern void CheckUpdate_OnDestroy_m5BB8BE821A7866C33D05C34C9D4262BFDD924117 (void);
+// 0x000001D8 System.Void UpgradeSystem.CheckUpdate::.ctor()
+extern void CheckUpdate__ctor_mC57AE4F27525BBE36FA3A1483E029E8B0EE8287F (void);
+// 0x000001D9 System.Void UpgradeSystem.CheckUpdate::<ShowPopup>b__9_0()
+extern void CheckUpdate_U3CShowPopupU3Eb__9_0_mDCECDD549E8A96884B07AA1E5FD0C46324D2AED2 (void);
+// 0x000001DA System.Void UpgradeSystem.CheckUpdate::<ShowPopup>b__9_1()
+extern void CheckUpdate_U3CShowPopupU3Eb__9_1_mA2407B8153A1289E24162816673DD7EBF9F7C395 (void);
+// 0x000001DB System.Void UpgradeSystem.CheckUpdate/<CheckForUpdates>d__8::.ctor(System.Int32)
+extern void U3CCheckForUpdatesU3Ed__8__ctor_m662ECDAA6153ABBE49A3C3B3FD287489207CF9A3 (void);
+// 0x000001DC System.Void UpgradeSystem.CheckUpdate/<CheckForUpdates>d__8::System.IDisposable.Dispose()
+extern void U3CCheckForUpdatesU3Ed__8_System_IDisposable_Dispose_mFB873444BC1B6EF2470BC6B53B46246BFA2F2260 (void);
+// 0x000001DD System.Boolean UpgradeSystem.CheckUpdate/<CheckForUpdates>d__8::MoveNext()
+extern void U3CCheckForUpdatesU3Ed__8_MoveNext_m4153D761EE967C28EC41DEFAB85103644A9E2B28 (void);
+// 0x000001DE System.Object UpgradeSystem.CheckUpdate/<CheckForUpdates>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CCheckForUpdatesU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m83CE8A05822C6953BA9AD9B0EDD166C233A4EE76 (void);
+// 0x000001DF System.Void UpgradeSystem.CheckUpdate/<CheckForUpdates>d__8::System.Collections.IEnumerator.Reset()
+extern void U3CCheckForUpdatesU3Ed__8_System_Collections_IEnumerator_Reset_mC4DA5A6B22A2BE33BE97C9D2641989C0D5F928B3 (void);
+// 0x000001E0 System.Object UpgradeSystem.CheckUpdate/<CheckForUpdates>d__8::System.Collections.IEnumerator.get_Current()
+extern void U3CCheckForUpdatesU3Ed__8_System_Collections_IEnumerator_get_Current_mECBCA5DED41FE26772F6535F4DDF6ECB1A338BEC (void);
+static Il2CppMethodPointer s_methodPointers[480] = 
 {
 	PlayerAction_get_asset_mB1FCE30E650D819F5C5030A04D399993EC5A7009,
 	PlayerAction__ctor_mB5F86BCF3ABB82CFE689B143F4F105EF71B18AA7,
@@ -1392,6 +1424,22 @@ static Il2CppMethodPointer s_methodPointers[464] =
 	U3CCoinAnimateU3Ed__28_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mE9ED5782BD2B682F5E309BDA7F786C9C47B252C9,
 	U3CCoinAnimateU3Ed__28_System_Collections_IEnumerator_Reset_m77EA8720CC59D559935B236446A6FF95E5AB72D4,
 	U3CCoinAnimateU3Ed__28_System_Collections_IEnumerator_get_Current_m32A1528C1F06D90CCDCE14583538F047ADC13543,
+	UISplash_GoMenu_m8319CA43E3F6970FCF2D9434DD4C67939D7AA3BA,
+	UISplash__ctor_m7FBE0C1A28E02D345F37AA603D90737B7900CF05,
+	CheckUpdate_Start_mDEE984FCAAEB1C401235C62F91383B4229BC25C8,
+	CheckUpdate_CheckForUpdates_m93111E9B321F9D779CF58277931045182C342759,
+	CheckUpdate_ShowPopup_mEEA89A501AD047340C6DA6EECE360B6D27DAD174,
+	CheckUpdate_HidePopup_mA21108A497BC3E3C43D68C73B555ED56A3738716,
+	CheckUpdate_OnDestroy_m5BB8BE821A7866C33D05C34C9D4262BFDD924117,
+	CheckUpdate__ctor_mC57AE4F27525BBE36FA3A1483E029E8B0EE8287F,
+	CheckUpdate_U3CShowPopupU3Eb__9_0_mDCECDD549E8A96884B07AA1E5FD0C46324D2AED2,
+	CheckUpdate_U3CShowPopupU3Eb__9_1_mA2407B8153A1289E24162816673DD7EBF9F7C395,
+	U3CCheckForUpdatesU3Ed__8__ctor_m662ECDAA6153ABBE49A3C3B3FD287489207CF9A3,
+	U3CCheckForUpdatesU3Ed__8_System_IDisposable_Dispose_mFB873444BC1B6EF2470BC6B53B46246BFA2F2260,
+	U3CCheckForUpdatesU3Ed__8_MoveNext_m4153D761EE967C28EC41DEFAB85103644A9E2B28,
+	U3CCheckForUpdatesU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m83CE8A05822C6953BA9AD9B0EDD166C233A4EE76,
+	U3CCheckForUpdatesU3Ed__8_System_Collections_IEnumerator_Reset_mC4DA5A6B22A2BE33BE97C9D2641989C0D5F928B3,
+	U3CCheckForUpdatesU3Ed__8_System_Collections_IEnumerator_get_Current_mECBCA5DED41FE26772F6535F4DDF6ECB1A338BEC,
 };
 extern void PlayerActions__ctor_mE912D77709D123B715953934DDFAC061F8D25BBE_AdjustorThunk (void);
 extern void PlayerActions_get_Move_m097BE593493925F0776F63235AFA5AF95B26F107_AdjustorThunk (void);
@@ -1472,7 +1520,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[38] =
 	{ 0x0600003C, PauseActions_get_enabled_m65804A92A3C5CDD8B460DF03F2A03C26C380D668_AdjustorThunk },
 	{ 0x0600003E, PauseActions_SetCallbacks_mFC2D2010ED5CDB835A10327F838D169CEBB38791_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[464] = 
+static const int32_t s_InvokerIndices[480] = 
 {
 	4147,
 	4239,
@@ -1502,7 +1550,7 @@ static const int32_t s_InvokerIndices[464] =
 	4239,
 	4239,
 	4070,
-	6302,
+	6306,
 	3384,
 	3384,
 	4147,
@@ -1513,7 +1561,7 @@ static const int32_t s_InvokerIndices[464] =
 	4239,
 	4239,
 	4070,
-	6300,
+	6304,
 	3384,
 	3384,
 	4147,
@@ -1524,7 +1572,7 @@ static const int32_t s_InvokerIndices[464] =
 	4239,
 	4239,
 	4070,
-	6299,
+	6303,
 	3384,
 	3384,
 	4147,
@@ -1534,7 +1582,7 @@ static const int32_t s_InvokerIndices[464] =
 	4239,
 	4239,
 	4070,
-	6301,
+	6305,
 	3384,
 	0,
 	0,
@@ -1938,12 +1986,28 @@ static const int32_t s_InvokerIndices[464] =
 	4147,
 	4239,
 	4147,
+	4239,
+	4239,
+	4239,
+	4147,
+	4239,
+	4239,
+	4239,
+	4239,
+	4239,
+	4239,
+	3363,
+	4239,
+	4070,
+	4147,
+	4239,
+	4147,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	464,
+	480,
 	s_methodPointers,
 	38,
 	s_adjustorThunks,
